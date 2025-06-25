@@ -73,10 +73,11 @@ def desenhar_cartela(c, cartela, id_jogador, nome, email):
             if valor == 'X':
                 caminho_imagem = "syngenta_png.png"
                 if os.path.exists(caminho_imagem):
+                    tamanho_img = 40
                     c.drawImage(
                         caminho_imagem,
-                        x,
-                        y,
+                        x + (tamanho_celula - tamanho_img) / 2,
+                        y + (tamanho_celula - tamanho_img) / 2,
                         width=tamanho_celula,
                         height=tamanho_celula,
                         preserveAspectRatio=True,
