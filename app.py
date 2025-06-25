@@ -5,7 +5,7 @@ import re
 from reportlab.lib.pagesizes import A4
 from reportlab.pdfgen import canvas
 from reportlab.lib.colors import Color
-import win32com.client
+#import win32com.client
 
 # Gera os números da cartela
 def gerar_cartela():
@@ -183,7 +183,7 @@ def main():
         arquivos_pdfs.append(pdf)
         print(f"Cartela gerada: {pdf}")
         print(f"Enviando e-mail para {jogador['email']}...")
-        enviar_email_outlook(jogador['nome'], jogador['email'], pdf)
+        #enviar_email_outlook(jogador['nome'], jogador['email'], pdf)
         print(f"Enviado! Apagando arquivo {pdf}")
     
     compactar_pdfs(arquivos_pdfs)
