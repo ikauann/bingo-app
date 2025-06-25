@@ -78,8 +78,8 @@ def desenhar_cartela(c, cartela, id_jogador, nome, email):
                         caminho_imagem,
                         x + (tamanho_celula - tamanho_img) / 2,
                         y + (tamanho_celula - tamanho_img) / 2,
-                        width=tamanho_celula,
-                        height=tamanho_celula,
+                        width=tamanho_img,
+                        height=tamanho_img,
                         preserveAspectRatio=True,
                         mask='auto'
                     )
